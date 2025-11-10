@@ -5,7 +5,53 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.left-links a, .right-links a{
+  color: black;   /* not sure why color must go before text-decoration */
+  text-decoration: none
+}
+
+.header, .footer {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.footer {
+  background: #eeeeee;
+}
+
+
+.left-links, .right-links {
+  display: flex;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.buttons, .input {
+  display: flex;
+  gap: 20px;
+}
+
 
 img {
   width: 600px;
